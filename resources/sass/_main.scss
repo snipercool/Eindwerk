@@ -1,0 +1,134 @@
+body {
+    background: #fff;
+    overflow: hidden;
+
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-track{
+       background: $grey-default;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $grey-sidebar;
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    &::before {
+        font-size: 20px;
+    }
+}
+
+.bg-orange {
+    background-color: $orange !important;
+}
+
+.firstline {
+    text-align: center;
+    position: absolute;
+    left: 49%;
+    top: 20px;
+    bottom: 55%;
+    width: 1px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.secondline {
+    text-align: center;
+    position: absolute;
+    left: 49%;
+    top: 55%;
+    bottom: 20px;
+    width: 1px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.word {
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    color: white;
+    font-size: large;
+}
+
+//Column layout
+
+.application-layout {
+    display: grid;
+    grid-template-columns: repeat(9, 280px);
+    color: $blue-primary;
+    overflow-x: scroll;
+    column-gap: 5px;
+    margin-bottom: 20px;
+    max-height: calc(100% - 80px);
+}
+
+.app__column {
+    background-color: $grey-default;
+    border-radius: 0.5em;
+
+    &--sidebar {
+        background-color: $grey-sidebar;
+    }
+
+    &--add {
+        background-color: $grey-add;
+    }
+}
+
+.button {
+    margin-top: 35px;
+}
+
+.btn-add{
+    background-color: $grey-add !important;
+    width: 90%;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    color: white;
+    border: 0;
+    padding:18px;
+    margin-top: 108px;
+}
+
+.flip-list-move {
+    transition: transform 0.5s;
+}
+
+.no-move {
+    transition: transform 0s;
+}
+
+.ghost {
+    opacity: 0.5;
+    background: #c8ebfb;
+}
+
+.list-group {
+    min-height: 20px;
+}
+
+.list-group-item {
+    cursor: move;
+    color: white;
+}
+
+.list-group-item i {
+    cursor: pointer;
+}
+
+.choice{
+    background-color: $blue-secondary !important;
+}
+
+.obligated{
+    background-color: $blue-primary !important;
+}
