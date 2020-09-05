@@ -1,5 +1,5 @@
 <template>
-    <div class="app__column mx-0 py-4" data-step="2" data-intro="De keuze vakken zijn de vakken die niet verplicht zijn. Deze kan je gebruiken door te slepen naar een jaar en opslaan.">
+    <div class="app__column mx-0 py-4">
         <div class="row">
             <div class="col-11 mx-auto">
                 <h3>{{title}}</h3>
